@@ -1,8 +1,10 @@
-# archy
+# @eomm/archy
 
 Render nested hierarchies `npm ls` style with unicode pipes.
 
-
+> This is a fork of `substack/node-archy`.  
+> The original repository doesn't exist anymore - so here is my fork.
+> This version has an additional feature to customize the fields name of `obj` input.
 
 # example
 
@@ -78,10 +80,8 @@ and `opts.nodesField`, so you don't need to adapt your tree.
 
 # install
 
-With [npm](http://npmjs.org) do:
-
 ```
-npm install archy
+npm install @eomm/archy
 ```
 
 # license

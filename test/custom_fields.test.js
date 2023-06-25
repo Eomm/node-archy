@@ -3,18 +3,18 @@ const archy = require('../')
 
 test('beep', function (t) {
   const s = archy({
-    label: 'beep',
-    nodes: [
+    name: 'beep',
+    children: [
       'ity',
       {
-        label: 'boop',
-        nodes: [
+        name: 'boop',
+        children: [
           {
-            label: 'o_O',
-            nodes: [
+            name: 'o_O',
+            children: [
               {
-                label: 'oh',
-                nodes: ['hello', 'puny']
+                name: 'oh',
+                children: ['hello', 'puny']
               },
               'human'
             ]
@@ -23,7 +23,7 @@ test('beep', function (t) {
         ]
       }
     ]
-  })
+  }, undefined, { labelField: 'name', nodesField: 'children' })
   t.equal(s, [
     'beep',
     '├── ity',

@@ -1,17 +1,17 @@
-var archy = require('../');
-var s = archy({
-  name : 'beep',
-  children : [
+const archy = require('../')
+const s = archy({
+  name: 'beep',
+  children: [
     'ity',
     {
-      name : 'boop',
-      children : [
+      name: 'boop',
+      children: [
         {
-          name : 'o_O',
-          children : [
+          name: 'o_O',
+          children: [
             {
-              name : 'oh',
-              children : [ 'hello', 'puny' ]
+              name: 'oh',
+              children: ['hello', 'puny']
             },
             'human'
           ]
@@ -20,5 +20,5 @@ var s = archy({
       ]
     }
   ]
-}, undefined, { labelField: 'name', nodesField: 'children' });
-console.log(s);
+}, undefined, { labelField: 'name', nodesField: 'children' })
+console.log(s)

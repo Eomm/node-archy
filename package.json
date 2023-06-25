@@ -1,8 +1,11 @@
 {
-  "name": "archy",
+  "name": "@eomm/archy",
   "version": "1.0.0",
   "description": "render nested hierarchies `npm ls` style with unicode pipes",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "devDependencies": {
     "standard": "^17.1.0",
     "tap": "^16.3.7"
