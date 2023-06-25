@@ -52,7 +52,7 @@ beep
 
   const archy = require('@eomm/archy')
 
-## archy(obj, prefix='', opts={})
+## archy(obj, prefix='', opts={ labelField: 'label', nodesField: 'nodes' })
 
 Return a string representation of `obj` with unicode pipe characters like how
 `npm ls` looks.
@@ -72,6 +72,9 @@ with the current prefix.
 
 To disable unicode results in favor of all-ansi output set `opts.unicode` to
 `false`.
+
+You can customize the fields name of `obj` specifing a string in `opts.labelField`
+and `opts.nodesField`, so you don't need to adapt your tree.
 
 # install
 
