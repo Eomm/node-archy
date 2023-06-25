@@ -2,15 +2,13 @@
 
 Render nested hierarchies `npm ls` style with unicode pipes.
 
-[![browser support](http://ci.testling.com/substack/node-archy.png)](http://ci.testling.com/substack/node-archy)
 
-[![build status](https://secure.travis-ci.org/substack/node-archy.png)](http://travis-ci.org/substack/node-archy)
 
 # example
 
 ``` js
-var archy = require('archy');
-var s = archy({
+const archy = require('@eomm/archy');
+const s = archy({
   label : 'beep',
   nodes : [
     'ity',
@@ -52,7 +50,7 @@ beep
 
 # methods
 
-var archy = require('archy')
+  const archy = require('@eomm/archy')
 
 ## archy(obj, prefix='', opts={})
 
