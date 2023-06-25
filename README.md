@@ -2,6 +2,9 @@
 
 Render nested hierarchies `npm ls` style with unicode pipes.
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![ci](https://github.com/Eomm/node-archy/actions/workflows/ci.yml/badge.svg)](https://github.com/Eomm/node-archy/actions/workflows/ci.yml)
+
 > This is a fork of `substack/node-archy`.  
 > The original repository doesn't exist anymore - so here is my fork.
 > This version has an additional feature to customize the fields name of `obj` input.
