@@ -1,17 +1,17 @@
-var archy = require('../');
-var s = archy({
-  label : 'beep',
-  nodes : [
+const archy = require('../')
+const s = archy({
+  label: 'beep',
+  nodes: [
     'ity',
     {
-      label : 'boop',
-      nodes : [
+      label: 'boop',
+      nodes: [
         {
-          label : 'o_O',
-          nodes : [
+          label: 'o_O',
+          nodes: [
             {
-              label : 'oh',
-              nodes : [ 'hello', 'puny' ]
+              label: 'oh',
+              nodes: ['hello', 'puny']
             },
             'human'
           ]
@@ -20,5 +20,5 @@ var s = archy({
       ]
     }
   ]
-});
-console.log(s);
+})
+console.log(s)

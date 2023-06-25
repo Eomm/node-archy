@@ -1,16 +1,19 @@
-# archy
+# @eomm/archy
 
 Render nested hierarchies `npm ls` style with unicode pipes.
 
-[![browser support](http://ci.testling.com/substack/node-archy.png)](http://ci.testling.com/substack/node-archy)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![ci](https://github.com/Eomm/node-archy/actions/workflows/ci.yml/badge.svg)](https://github.com/Eomm/node-archy/actions/workflows/ci.yml)
 
-[![build status](https://secure.travis-ci.org/substack/node-archy.png)](http://travis-ci.org/substack/node-archy)
+> This is a fork of `substack/node-archy`.  
+> The original repository doesn't exist anymore - so here is my fork.
+> This version has an additional feature to customize the fields name of `obj` input.
 
 # example
 
 ``` js
-var archy = require('archy');
-var s = archy({
+const archy = require('@eomm/archy');
+const s = archy({
   label : 'beep',
   nodes : [
     'ity',
@@ -52,9 +55,9 @@ beep
 
 # methods
 
-var archy = require('archy')
+  const archy = require('@eomm/archy')
 
-## archy(obj, prefix='', opts={})
+## archy(obj, prefix='', opts={ labelField: 'label', nodesField: 'nodes' })
 
 Return a string representation of `obj` with unicode pipe characters like how
 `npm ls` looks.
@@ -75,12 +78,13 @@ with the current prefix.
 To disable unicode results in favor of all-ansi output set `opts.unicode` to
 `false`.
 
+You can customize the fields name of `obj` specifing a string in `opts.labelField`
+and `opts.nodesField`, so you don't need to adapt your tree.
+
 # install
 
-With [npm](http://npmjs.org) do:
-
 ```
-npm install archy
+npm install @eomm/archy
 ```
 
 # license
